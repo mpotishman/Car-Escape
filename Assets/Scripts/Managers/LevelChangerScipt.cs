@@ -7,6 +7,7 @@ public class LevelChangerScipt : MonoBehaviour
     
 
 
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void loadNextLevel(){
         string sceneName = SceneManager.GetActiveScene().name;

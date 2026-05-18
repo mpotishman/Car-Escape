@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:learn.unity.com)",
+      "WebFetch(domain:docs.unity3d.com)",
+      "Bash(mv \"RedCarMovement.cs\" \"RedCarMovement.cs.meta\" \"Car Movement/\")",
+      "Bash(mv \"YellowCarMovement.cs\" \"YellowCarMovement.cs.meta\" \"Car Movement/\")",
+      "Bash(mv \"BlueCarMove.cs\" \"BlueCarMove.cs.meta\" \"Car Movement/\")",
+      "Bash(mv \"AutoMovingCar.cs\" \"AutoMovingCar.cs.meta\" \"Car Movement/\")",
+      "Bash(mv \"CarBelowMove.cs\" \"CarBelowMove.cs.meta\" \"Car Movement/\")",
+      "Bash(mv \"MoveCounter.cs\" \"MoveCounter.cs.meta\" \"Moves.cs\" \"Moves.cs.meta\" \"UI/\")",
+      "Bash(mv \"Menu Scripts\" \"Menu Scripts.meta\" \"UI/\")",
+      "Bash(mv \"CoinMove.cs\" \"CoinMove.cs.meta\" \"Collectibles/\")",
+      "Bash(mv \"CollisionHandler.cs\" \"CollisionHandler.cs.meta\" \"Physics/\")",
+      "Bash(mv \"NewBehaviourScript.cs\" \"NewBehaviourScript.cs.meta\" \"Unused/\")",
+      "Bash(find \"/Users/michaelpotishman/Downloads/Car Escape2\" -name \"YellowCarMovement.cs\")",
+      "Bash(cat \"/Users/michaelpotishman/Library/Application Support/Code/User/settings.json\")",
+      "Bash(find /Users/michaelpotishman -type f \\\\\\( -name \"*.cs\" -o -name \"*.md\" -o -name \"*.txt\" \\\\\\) 2>/dev/null | head -20)",
+      "WebFetch(domain:vionixstudio.com)",
+      "WebFetch(domain:medium.com)",
+      "WebFetch(domain:sleepingdaemon.medium.com)"
+    ]
+  }
+}

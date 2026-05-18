@@ -22,15 +22,15 @@ public class MainMenuStyler : MonoBehaviour
 
     private void SetupCanvasScaler()
     {
-        Canvas canvas = FindObjectOfType<Canvas>();
+        Canvas canvas = FindAnyObjectByType<Canvas>();
         if (canvas == null) return;
 
         CanvasScaler scaler = canvas.GetComponent<CanvasScaler>();
         if (scaler == null) scaler = canvas.gameObject.AddComponent<CanvasScaler>();
 
-        scaler.uiScaleMode        = CanvasScaler.ScaleMode.ScaleWithScreenSize;
+        scaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
         scaler.referenceResolution = new Vector2(1920f, 1080f);
-        scaler.screenMatchMode    = CanvasScaler.ScreenMatchMode.MatchWidthOrHeight;
+        scaler.screenMatchMode = CanvasScaler.ScreenMatchMode.MatchWidthOrHeight;
         scaler.matchWidthOrHeight = 0.5f;
     }
 
@@ -67,23 +67,23 @@ public class MainMenuStyler : MonoBehaviour
         RectTransform rt = title.GetComponent<RectTransform>();
         if (rt != null)
         {
-            rt.anchorMin        = new Vector2(0f, 0.65f);
-            rt.anchorMax        = new Vector2(1f, 0.85f);
-            rt.offsetMin        = new Vector2(40f, 0f);
-            rt.offsetMax        = new Vector2(-40f, 0f);
+            rt.anchorMin = new Vector2(0f, 0.65f);
+            rt.anchorMax = new Vector2(1f, 0.85f);
+            rt.offsetMin = new Vector2(40f, 0f);
+            rt.offsetMax = new Vector2(-40f, 0f);
         }
 
         TextMeshProUGUI tmp = title.GetComponent<TextMeshProUGUI>();
         if (tmp == null) return;
 
-        tmp.text      = "Car Escape";
-        tmp.fontSize  = 96;
+        tmp.text = "Car Escape";
+        tmp.fontSize = 96;
         tmp.fontStyle = FontStyles.Bold;
-        tmp.color     = Color.white;
+        tmp.color = Color.white;
         tmp.alignment = TextAlignmentOptions.Center;
-        tmp.enableAutoSizing  = true;
-        tmp.fontSizeMin       = 24;
-        tmp.fontSizeMax       = 96;
+        tmp.enableAutoSizing = true;
+        tmp.fontSizeMin = 24;
+        tmp.fontSizeMax = 96;
     }
 
     private void SetupButtonContainer()
@@ -92,8 +92,8 @@ public class MainMenuStyler : MonoBehaviour
         GameObject container = GameObject.Find("ButtonContainer");
         if (container == null)
         {
-            GameObject tutBtn   = GameObject.Find("TutorialButton");
-            GameObject lvl1Btn  = GameObject.Find("Level1Button");
+            GameObject tutBtn = GameObject.Find("TutorialButton");
+            GameObject lvl1Btn = GameObject.Find("Level1Button");
             if (tutBtn == null || lvl1Btn == null) return;
 
             container = new GameObject("ButtonContainer");
@@ -108,21 +108,21 @@ public class MainMenuStyler : MonoBehaviour
         RectTransform crt = container.GetComponent<RectTransform>();
         if (crt == null) crt = container.AddComponent<RectTransform>();
 
-        crt.anchorMin        = new Vector2(0.3f, 0.25f);
-        crt.anchorMax        = new Vector2(0.7f, 0.55f);
-        crt.offsetMin        = Vector2.zero;
-        crt.offsetMax        = Vector2.zero;
+        crt.anchorMin = new Vector2(0.3f, 0.25f);
+        crt.anchorMax = new Vector2(0.7f, 0.55f);
+        crt.offsetMin = Vector2.zero;
+        crt.offsetMax = Vector2.zero;
 
         // VerticalLayoutGroup spaces buttons automatically
         VerticalLayoutGroup vlg = container.GetComponent<VerticalLayoutGroup>();
         if (vlg == null) vlg = container.AddComponent<VerticalLayoutGroup>();
 
-        vlg.spacing              = 20f;
-        vlg.childControlWidth    = true;
-        vlg.childControlHeight   = true;
-        vlg.childForceExpandWidth  = true;
+        vlg.spacing = 20f;
+        vlg.childControlWidth = true;
+        vlg.childControlHeight = true;
+        vlg.childForceExpandWidth = true;
         vlg.childForceExpandHeight = true;
-        vlg.padding              = new RectOffset(0, 0, 0, 0);
+        vlg.padding = new RectOffset(0, 0, 0, 0);
 
         StyleButton("TutorialButton");
         StyleButton("Level1Button");
@@ -149,24 +149,24 @@ public class MainMenuStyler : MonoBehaviour
             ColorUtility.TryParseHtmlString("#2E2E55", out hover);
             ColorUtility.TryParseHtmlString("#0F0F20", out press);
 
-            ColorBlock cb       = button.colors;
-            cb.normalColor      = normal;
+            ColorBlock cb = button.colors;
+            cb.normalColor = normal;
             cb.highlightedColor = hover;
-            cb.pressedColor     = press;
-            cb.colorMultiplier  = 1f;
-            button.colors       = cb;
+            cb.pressedColor = press;
+            cb.colorMultiplier = 1f;
+            button.colors = cb;
         }
 
         TextMeshProUGUI tmp = btn.GetComponentInChildren<TextMeshProUGUI>();
         if (tmp != null)
         {
-            tmp.fontSize        = 36;
-            tmp.fontStyle       = FontStyles.Bold;
-            tmp.color           = Color.white;
-            tmp.alignment       = TextAlignmentOptions.Center;
+            tmp.fontSize = 36;
+            tmp.fontStyle = FontStyles.Bold;
+            tmp.color = Color.white;
+            tmp.alignment = TextAlignmentOptions.Center;
             tmp.enableAutoSizing = true;
-            tmp.fontSizeMin      = 18;
-            tmp.fontSizeMax      = 36;
+            tmp.fontSizeMin = 18;
+            tmp.fontSizeMax = 36;
         }
     }
 }

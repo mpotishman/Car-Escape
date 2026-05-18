@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/ProperCarEscape.unity
+    guid: f5cdc25cc03cc3f48b42b4d6371eabf1
+  - enabled: 0
+    path: Assets/Scenes/ProperTitleScreem.unity
+    guid: 513633d96f18b8d42aab38a9fa606400
+  - enabled: 1
+    path: Assets/Scenes/FirstLevel.unity
+    guid: 4f8b10166f48f0b45a6d801d5ccb4b46
+  - enabled: 0
+    path: Assets/Scenes/FinalMainLevel.unity
+    guid: 4c8b8264fd8a6ef43b0a2133dd8afbcd
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: af756bfff58d84fde89e8c43260b162b
+  m_configObjects: {}

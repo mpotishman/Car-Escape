@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Coin
   - TutorialGoal
+  - TutorialYellowGoal
+  - BlackCar
   layers:
   - Default
   - TransparentFX
@@ -13,7 +15,7 @@ TagManager:
   - Highlight
   - Water
   - UI
-  - 
+  - Traffic
   - 
   - Post Proccesing
   - 

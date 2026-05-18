@@ -4,3 +4,14 @@
 [Ll]ogs/
 [Bb]uild/
 *.DS_Store
+*.csproj
+*.sln
+*.exe
+*.dll
+*.zip
+*.psd
+Assembly-CSharp*
+MonoBleedingEdge/
+[Bb]uild*/
+*_Data/
+UserSettings/
